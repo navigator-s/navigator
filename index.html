@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Навигатор С</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+    <header id="header" class="page-header">
+        <div class="logotip" >
+            <a class="logo" href="/index.html">
+             <img src="image/logo_color.png" alt="Логотип" width="162" height="70">
+             </a>
+         </div>
+         <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">свернуть меню</button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="/products.html">Продукция</a></li>
+                    <li><a href="/partners.html">Партнеры</a></li>
+                    <li><a href="/news.html">Новости</a></li>
+                    <li><a href="/about.html">О нас</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+       
+    <main id="main">
+        <div class="container">
+            <h1>Навигатор С</h1>
+            <section class="column">
+                <p>Группа компаний «Навигатор-связь» успешно 
+                    работает на российском рынке 
+                    телекоммуникационного оборудования с 2000г.
+                </p>    
+                <p> Постепенно расширяя ассортимент поставляемой 
+                    продукции, компания освоила рынок Уральского 
+                    региона, Сибири, Поволжья, Дальнего Востока.
+                </p>
+            </section>
+            <section class="column column--bold">
+                <p>Мы являемся представителем и официальным 
+                        региональным партнером ведущих игроков
+                         рынка телекоммуникационного оборудования
+                </p>
+            </section>
+            <section class="logo-prodiver">
+                    <a href="https://www.zyxel.com" target="_blank">
+                        <img src="image-logo/logo-zyxel.png" alt="" >
+                    </a>    
+                    <a href="http://www.dlink.ru/" target="_blank">
+                        <img src="image-logo/logo-d-link.png" alt="" >
+                    </a>
+                    <a href="https://www.cisco.com" target="_blank">
+                        <img src="image-logo/Cisco_logo-1000px.png" alt="" >
+                    </a>
+                    <a href="https://softline.ru/" target="_blank">
+                        <img src="image-logo/logo-softline.png" alt="" >
+                    </a>
+                    <a href="http://www.ocs.ru/" target="_blank">
+                        <img src="image-logo/logo-ocs-distribution1.png" alt="" > 
+                    </a>
+                    <a href="http://oaobeto.ru/" target="_blank">
+                        <img src="image-logo/beto.png" alt="" > 
+                    </a> 
+                    <a href="https://www.ssd.ru/" target="_blank">
+                        <img src="image-logo/logo-svasstroy.png" alt="" >
+                    </a> 
+                    <a href="http://interkross.ru" target="_blank">
+                        <img src="image-logo/logo-intercross1.png" alt="" >
+                    </a>    
+            </section>  
+        </div>
+    </main>
+
+    
+    <script type="text/javascript">
+    (function() {
+        var button = document.getElementById ('toggle-menu');
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            var menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open');
+        });
+    })();
+    </script>
+</body>
+</html>

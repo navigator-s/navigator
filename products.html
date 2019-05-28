@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Навигатор С</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+    <header id="header" class="page-header">
+        <div class="logotip" >
+            <a class="logo" href="/index.html">
+             <img src="image/logo_color.png" alt="Логотип" width="92" height="42">
+             </a>
+         </div>
+         <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">свернуть меню</button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="/products.html">Продукция</a></li>
+                    <li><a href="/partners.html">Партнеры</a></li>
+                    <li><a href="/news.html">Новости</a></li>
+                    <li><a href="/about.html">О нас</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+       
+    <main id="main">
+            <h2>Мы предлагаем</h2>
+        <div class="slider-container">
+            <div class="button button--left">
+                <button id="slider-left">
+                    
+                </button>
+            </div>
+            <div id="slider">
+              <div id="polosa">
+                <figure>
+                    <img src="image-production/cross.png" alt="" width="428" height="263">
+                    <figcaption>кроссовое оборудование</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/network-197300_1920.png" alt="" width="428" height="263">
+                    <figcaption>активное оборудование</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cable_pdoduction.png" alt="" width="428" height="263">
+                    <figcaption>кабельная продукция</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cross.png" alt="" width="428" height="263">
+                    <figcaption>кабеленесущие системы</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/network-197300_1920.png" alt="" width="428" height="263">
+                    <figcaption>инструмент и измерительная техника</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cable_pdoduction.png" alt="" width="428" height="263">
+                    <figcaption>кабельная арматура</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cable_pdoduction.png" alt="" width="428" height="263">
+                    <figcaption>электрооборудование и материалы</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cross.png" alt="" width="428" height="263">
+                    <figcaption>материалы для оптических пассивных систем</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/network-197300_1920.png" alt="" width="428" height="263">
+                    <figcaption>строительно-монтажные материалы</figcaption>   
+                </figure>
+                <figure>
+                    <img src="image-production/cable_pdoduction.png" alt="" width="428" height="263">
+                    <figcaption>системы промышленной автоматизации</figcaption>   
+                </figure>
+              </div>
+            </div>
+            <div class="button button--right">
+                <button id="slider-right">
+                    
+                </button>
+            </div>
+        </div>
+    </main>
+
+   
+    <script type="text/javascript">
+    (function() {
+        var button = document.getElementById ('toggle-menu');
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            var menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open');
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
